@@ -5,6 +5,7 @@ files:
     destination: /var/www/html/
 commands:
   - docker -v
+  - docker run -d -p 85:80 httpd
 hooks:
   BeforeInstall:
     - location: deploy/before_install
